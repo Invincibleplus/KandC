@@ -5,7 +5,7 @@
     day = hour * 24;  
 })();
 
-const end = new Date("Jul 01, 2021 12:00:00").getTime();
+const end = new Date("Oct 20, 2023 12:00:00").getTime();
 
 const int = setInterval(() => { const current = new Date().getTime(); const remaining = end - current; document.getElementById("days").innerText = Math.floor(remaining / day); document.getElementById("hours").innerText = Math.floor( (remaining % day) / hour ); document.getElementById("minutes").innerText = Math.floor( (remaining % hour) / min ); document.getElementById("seconds").innerText = Math.floor( (remaining % min) / sec ); }, 1000);
 
