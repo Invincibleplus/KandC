@@ -93,27 +93,8 @@
             <div id="count" class="count"> <!-- You can edit HTML code of this block in the js/main.js --> </div> 
             <!-- Counter -->
 
-            			<div class="flex-w flex-c-m cd100 p-b-33">
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 days">2</span>
-					<span class="s2-txt1">Days</span>
-				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 hours">47</span>
-					<span class="s2-txt1">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 minutes">59</span>
-					<span class="s2-txt1">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-					<span class="l2-txt1 p-b-9 seconds">59</span>
-					<span class="s2-txt1">Seconds</span>
-				</div>
-				</div>
+	
+	<div id="countdown"> <ul> <li><span id="days"></span>Days</li> <li><span id="hours"></span>Hours</li> <li><span id="minutes"></span>Minutes</li> <li><span id="seconds"></span>Seconds</li> </ul> </div>
 
 		  
             <h1></h1><br><br>
@@ -604,28 +585,7 @@
     <!--<script src="js/jquery.countdown.js"></script>-->
     <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
     <script src="js/main.js"></script>
-<!--===============================================================================================-->
-	<script src="ruswa.co.za/vendor/countdowntime/moment.min.js"></script>
-	<script src="ruswa.co.za/vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="ruswa.co.za/vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="ruswa.co.za/vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 2023,
-			endtimeMonth: 10,
-			endtimeDate: 20,
-			endtimeHours: 12,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-
+    <script src="timer.js"></script>
     
     <!-- Demo Color changer Script -->
     <script src="preview/lmpixels-demo-panel.js"></script>
